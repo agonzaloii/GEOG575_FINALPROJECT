@@ -1,0 +1,45 @@
+<!-- html by Kerry C. McAlister, Carlos Crespo, Ethan Reuse 2018 -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<link href="/data/favicon.ico" rel="icon" type="image/x-icon"/>
+		
+		<title>OSM USA Changeset Viewer</title>
+
+		<!--put your external stylesheet links here-->
+		<link rel="stylesheet" href="css/style.css">
+		<!--[if IE<9]>
+			<link rel="stylesheet" href="css/style.ie.css">
+		<![endif]-->
+		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
+        <link rel="stylesheet" type="text/css" href="css/d3.slider.css" media="screen">
+	</head>
+
+	<body>
+
+		<div id="title">
+			<h1>OSM USA Changeset Viewer</h1>
+			<div id="descript">This visualization depicts the changes done to OpenStreetMap in the United States of America.Each change is noted as a changeset and can be anything from an addition,deletion, and/or modification of a feature within the map. Data was taken using overpass API and openstreetmap. Click drop-down menu above to begin exploring.You can view select features on the dropdown on the left and the timeframe on the right.</div>
+		</div>
+
+		<div id="map"></div>
+		<div class="slider"></div>
+        
+		<div id="credit">© 2018, Bautista, Albert; Data Source: <a href="https://www.openstreetmap.org/search?query=San%20Francisco#map=10/37.7852/-122.7278">FEMA</a></div>
+		
+		
+		<script type="text/javascript" src="lib/d3-queue/d3-queue.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Archivo+Narrow:300,700" rel="stylesheet">
+		<script type="text/javascript" src="js/d3/d3.js"></script>
+		<script type="text/javascript" src="lib/topojson/topojson.js"></script>
+		<script type="text/javascript" src="lib/d3-geo-projection/d3-geo-projection.js"></script>
+		<script type="text/javascript" src="lib/simple-statistics.min.js"></script>
+		<script type="text/javascript" src="lib/jquery-3.3.1.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript" src="lib/d3.slider.js"></script>
+	</body>
+</html>
